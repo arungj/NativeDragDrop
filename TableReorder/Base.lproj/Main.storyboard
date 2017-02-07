@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-h4-83k">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="KDI-k1-3j3">
+                                        <barButtonItem key="leftBarButtonItem" title="Edit" id="FW5-RX-td7">
+                                            <connections>
+                                                <action selector="editAction:" destination="BYZ-38-t0r" id="ZIy-WK-l3v"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="95X-Lf-iuT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="sY8-gX-eRV" customClass="MainTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sY8-gX-eRV" id="awZ-9G-n1H">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pp-qC-aWB">
+                                                    <rect key="frame" x="9.5" y="-0.5" width="355" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6Pp-qC-aWB" firstAttribute="centerX" secondItem="awZ-9G-n1H" secondAttribute="centerX" id="4fV-ai-ALk"/>
+                                                <constraint firstItem="6Pp-qC-aWB" firstAttribute="height" secondItem="awZ-9G-n1H" secondAttribute="height" id="JFi-Dk-GIy"/>
+                                                <constraint firstItem="6Pp-qC-aWB" firstAttribute="width" secondItem="awZ-9G-n1H" secondAttribute="width" constant="-20" id="KZy-4B-NYs"/>
+                                                <constraint firstItem="6Pp-qC-aWB" firstAttribute="centerY" secondItem="awZ-9G-n1H" secondAttribute="centerY" id="P1d-Mf-AYB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="6Pp-qC-aWB" id="VDq-qp-7Kg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vbL-gp-xWW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e7r-aM-mTr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="95X-Lf-iuT" firstAttribute="top" secondItem="gsx-h4-83k" secondAttribute="bottom" id="2BV-9f-KyB"/>
+                            <constraint firstItem="gsx-h4-83k" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="A9J-Xi-p6z"/>
+                            <constraint firstItem="95X-Lf-iuT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CQO-II-EB8"/>
+                            <constraint firstItem="gsx-h4-83k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="FJH-H1-wZF"/>
+                            <constraint firstItem="95X-Lf-iuT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGg-ME-2jk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="95X-Lf-iuT" secondAttribute="bottom" id="Uu6-zc-wU7"/>
+                            <constraint firstItem="gsx-h4-83k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aVo-tR-6NB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTableview" destination="95X-Lf-iuT" id="Kh9-B1-94b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
