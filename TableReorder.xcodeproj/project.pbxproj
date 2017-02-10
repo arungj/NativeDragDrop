@@ -14,7 +14,18 @@
 		9BCAFF571E40EABA00C69FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCAFF561E40EABA00C69FD9 /* Assets.xcassets */; };
 		9BCAFF5A1E40EABA00C69FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCAFF581E40EABA00C69FD9 /* LaunchScreen.storyboard */; };
 		9BCAFF631E40ED5100C69FD9 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCAFF621E40ED5100C69FD9 /* MainTableViewCell.m */; };
+		9BD3965C1E4E669800929F63 /* TableReorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3965B1E4E669800929F63 /* TableReorderTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BD3965E1E4E669800929F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BCAFF3F1E40EAB900C69FD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BCAFF461E40EABA00C69FD9;
+			remoteInfo = TableReorder;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9BCAFF471E40EABA00C69FD9 /* TableReorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableReorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +40,20 @@
 		9BCAFF5B1E40EABA00C69FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BCAFF611E40ED5100C69FD9 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		9BCAFF621E40ED5100C69FD9 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		9BD396591E4E669800929F63 /* TableReorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableReorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD3965B1E4E669800929F63 /* TableReorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableReorderTests.m; sourceTree = "<group>"; };
+		9BD3965D1E4E669800929F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9BCAFF441E40EABA00C69FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD396561E4E669800929F63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				9BCAFF491E40EABA00C69FD9 /* TableReorder */,
+				9BD3965A1E4E669800929F63 /* TableReorderTests */,
 				9BCAFF481E40EABA00C69FD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9BCAFF471E40EABA00C69FD9 /* TableReorder.app */,
+				9BD396591E4E669800929F63 /* TableReorderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +107,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9BD3965A1E4E669800929F63 /* TableReorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BD3965B1E4E669800929F63 /* TableReorderTests.m */,
+				9BD3965D1E4E669800929F63 /* Info.plist */,
+			);
+			path = TableReorderTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,6 +136,24 @@
 			productReference = 9BCAFF471E40EABA00C69FD9 /* TableReorder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BD396581E4E669800929F63 /* TableReorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD396621E4E669800929F63 /* Build configuration list for PBXNativeTarget "TableReorderTests" */;
+			buildPhases = (
+				9BD396551E4E669800929F63 /* Sources */,
+				9BD396561E4E669800929F63 /* Frameworks */,
+				9BD396571E4E669800929F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD3965F1E4E669800929F63 /* PBXTargetDependency */,
+			);
+			name = TableReorderTests;
+			productName = TableReorderTests;
+			productReference = 9BD396591E4E669800929F63 /* TableReorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +167,12 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = AFHDMPU5EY;
 						ProvisioningStyle = Automatic;
+					};
+					9BD396581E4E669800929F63 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AFHDMPU5EY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9BCAFF461E40EABA00C69FD9;
 					};
 				};
 			};
@@ -134,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				9BCAFF461E40EABA00C69FD9 /* TableReorder */,
+				9BD396581E4E669800929F63 /* TableReorderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +203,13 @@
 				9BCAFF5A1E40EABA00C69FD9 /* LaunchScreen.storyboard in Resources */,
 				9BCAFF571E40EABA00C69FD9 /* Assets.xcassets in Resources */,
 				9BCAFF551E40EABA00C69FD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD396571E4E669800929F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +227,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BD396551E4E669800929F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD3965C1E4E669800929F63 /* TableReorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BD3965F1E4E669800929F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BCAFF461E40EABA00C69FD9 /* TableReorder */;
+			targetProxy = 9BD3965E1E4E669800929F63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9BCAFF531E40EABA00C69FD9 /* Main.storyboard */ = {
@@ -299,6 +379,32 @@
 			};
 			name = Release;
 		};
+		9BD396601E4E669800929F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AFHDMPU5EY;
+				INFOPLIST_FILE = TableReorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.TableReorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableReorder.app/TableReorder";
+			};
+			name = Debug;
+		};
+		9BD396611E4E669800929F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AFHDMPU5EY;
+				INFOPLIST_FILE = TableReorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.TableReorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableReorder.app/TableReorder";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -316,6 +422,15 @@
 			buildConfigurations = (
 				9BCAFF5F1E40EABA00C69FD9 /* Debug */,
 				9BCAFF601E40EABA00C69FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD396621E4E669800929F63 /* Build configuration list for PBXNativeTarget "TableReorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD396601E4E669800929F63 /* Debug */,
+				9BD396611E4E669800929F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

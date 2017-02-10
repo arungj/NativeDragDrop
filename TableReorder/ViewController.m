@@ -11,7 +11,6 @@
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 - (IBAction)editAction:(id)sender;
-@property (weak, nonatomic) IBOutlet UITableView *mainTableview;
 
 @end
 
