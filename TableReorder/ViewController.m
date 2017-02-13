@@ -35,6 +35,7 @@
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.label.text = [NSString stringWithFormat:@"Label %ld", indexPath.row+1];
     cell.label.textColor = [UIColor darkGrayColor];
+    
     return cell;
 }
 
@@ -53,6 +54,11 @@
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Alert" message:[NSString stringWithFormat:@"selected row:%ld", indexPath.row] preferredStyle:UIAlertControllerStyleAlert];
+    [self showViewController:controller sender:nil];
 }
 
 - (IBAction)editAction:(id)sender {
