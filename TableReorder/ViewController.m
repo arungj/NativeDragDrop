@@ -34,6 +34,7 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.label.text = [NSString stringWithFormat:@"Label %ld", indexPath.row+1];
+    cell.label.textColor = [UIColor darkGrayColor];
     return cell;
 }
 
