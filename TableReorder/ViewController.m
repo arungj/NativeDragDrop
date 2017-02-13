@@ -58,6 +58,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Alert" message:[NSString stringWithFormat:@"selected row:%ld", indexPath.row] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [controller addAction:cancelAction];
     [self showViewController:controller sender:nil];
 }
 
