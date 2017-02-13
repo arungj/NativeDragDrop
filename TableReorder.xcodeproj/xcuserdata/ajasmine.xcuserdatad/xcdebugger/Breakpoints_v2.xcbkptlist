@@ -6,33 +6,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TableReorder/ViewController.m"
-            timestampString = "508454729.545593"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TableReorder/ViewController.m"
-            timestampString = "508454729.545593"
+            filePath = "TableReorderTests/TableReorderTests.m"
+            timestampString = "508694505.883372"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-tableView:canMoveRowAtIndexPath:"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-testNumRows"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TableReorderTests testNumRows]"
+                  moduleName = "TableReorderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajasmine/Desktop/Files/pers/projects/NativeTableReorder/TableReorderTests/TableReorderTests.m"
+                  timestampString = "508694442.464569"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "218">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TableReorderTests testNumRows]"
+                  moduleName = "TableReorderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajasmine/Desktop/Files/pers/projects/NativeTableReorder/TableReorderTests/TableReorderTests.m"
+                  timestampString = "508694442.473693"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "623">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TableReorderTests testNumRows]"
+                  moduleName = "TableReorderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajasmine/Desktop/Files/pers/projects/NativeTableReorder/TableReorderTests/TableReorderTests.m"
+                  timestampString = "508694442.477097"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "709">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TableReorderTests testNumRows]"
+                  moduleName = "TableReorderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajasmine/Desktop/Files/pers/projects/NativeTableReorder/TableReorderTests/TableReorderTests.m"
+                  timestampString = "508694442.480402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "831">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
