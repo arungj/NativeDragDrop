@@ -41,7 +41,7 @@
     XCTAssertTrue([cellText hasSuffix:@"1"], @"list numbering should start with 1");
 }
 
-- (void) estAppTitle {
+- (void) testAppTitle {
     UIWindow *w = [UIApplication sharedApplication].keyWindow;
     ViewController *vc = (id)w.rootViewController;
     UINavigationBar *navBar = [[vc.view subviews] objectAtIndex:0];
