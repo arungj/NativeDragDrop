@@ -35,7 +35,7 @@
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.label.text = [NSString stringWithFormat:@"Label %ld", indexPath.row+1];
     cell.label.textColor = [UIColor darkGrayColor];
-    NSLog(@"master commit 1");
+    NSLog(@"master commit 2");
     return cell;
 }
 
