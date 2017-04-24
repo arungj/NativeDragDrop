@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"nex commit 1");
+    NSLog(@"nex commit 2");
 }
 
 - (void)didReceiveMemoryWarning {
